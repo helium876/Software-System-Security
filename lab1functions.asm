@@ -19,9 +19,7 @@ section .text
 	;print fucnction
 	printString:
 		;Write routine below
-		mov eax, SYS_WRITE;setuparguement for function
-		mov [varMsg], DWORD hellomsg
-		mov [va
+		mov eax, SYS_WRITE
 		mov ebx, STDOUT
 		mov ecx, [varMsg]
 		mov edx, [varLen]
