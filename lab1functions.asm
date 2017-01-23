@@ -26,3 +26,12 @@ section .text
 		int 0x80
 
 	ret 
+
+	_start: 
+
+		;setuparguement for function
+		mov [varMsg], DWORD hellomsg
+		mov [varLen], DWORD msglength
+
+		call printString
+
